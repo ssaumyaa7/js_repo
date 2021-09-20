@@ -1,0 +1,124 @@
+/* .mainpage{
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+} */
+body{
+    margin:0;
+  padding:0;
+}
+.mainpage{
+  margin-top:-20px;
+  background-color: rgb(243, 241, 241);
+  height:100vh;
+  position:relative;
+  text-align: center;
+  justify-content: center;
+}
+
+.mainpage > h2{
+  padding-top:50px;  
+}
+
+.sides > tr{
+  display:flex;
+  
+}
+.notesdiv{
+  margin-left:500px;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  position:absolute;
+  top:50%;
+  left:50%;
+    margin-left:-230px;
+  transform: translate(-50%,-50%);
+  border-radius: 5px;
+  padding:10px 20px;
+  height:380px;
+  width:300px;
+}
+.notesList{
+  width:350px;
+  height:400px;
+  display: flex;
+    position:absolute;
+  background-color: white;
+    top:50%;
+  left:50%;
+  margin-left:200px;
+  transform: translate(-50%,-50%);
+    border-radius: 5px;
+  padding:10px 20px;
+}
+.enterdata{
+  display: flex;
+  flex-direction: column;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+.enterdata > input{
+  height:50px;
+    margin-top:10px;
+  margin-bottom:10px;
+  padding:10px 10px;
+  border:none;
+  border-radius:10px;
+}
+.font{
+  width:35px;
+  height:22px;
+  margin-left:10px;
+  border:1px solid rgb(235, 231, 231);
+  background-color: rgb(235, 231, 231);
+  border-radius: 5px;
+}
+.savebtn{
+  display: flex;
+  justify-content: space-between;
+}
+
+.savebtn  input {
+  float:right;
+  margin-top:220px;
+  cursor: pointer;
+}
+.colorpicker{
+    padding:0;
+    width:25px;
+    background-color: rgb(235, 231, 231);
+    border-radius: 5px;
+}
+.notesData{
+  padding-top:35px;
+}
+.editbtn{
+  padding-left:10px;  
+  cursor: pointer;
+}
+.submitbtn{
+  background-color: #00e2ac;
+  border:none;
+  color:white;
+  border-radius: 5px;
+  width:60px;
+  cursor: pointer;
+}
+.deletebtn{
+    cursor: pointer;
+    /* background-color: gray; */
+    
+}
+.notesData  tr{
+  background-color: rgb(230, 229, 227);
+  border-radius:8px;
+  
+} 
+tr{
+  margin-top:10px;
+}
+.notesData  tr>td>a:nth-child(even){
+  padding-left:5px;
+  padding-right:5px;  
+} 

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Note it Down</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="mainpage">
+      <h2>Note down Here</h2>
+      <table>
+        <tr class="sides">
+          <!-- Take Notes Input Start-->
+          <td class="notesdiv">
+            <form onsubmit="event.preventDefault();onFormSubmit();">
+              <div class="enterdata">
+                <!-- <label>Note down Here:</label> -->
+                <input type="text" id="notesInput" name="notesInput" autocomplete="off" required placeholder="Enter Text Here" cols="40">
+              </div>
+              <div class="savebtn">
+                <div>
+                  <input type="number" class="font" id="font" placeholder="11"></input>
+                  <input type="color" class="colorpicker" id="colorpicker"></input>
+                </div>
+                <input type="submit" value="Submit" placeholder="Save" class="submitbtn"></input>
+              </div>
+            </form>
+          </td>
+          <!-- Take Notes Input End-->
+
+          <!-- Display Notes Start-->
+          <td>
+            <table class="notesList" id="notesList">
+              <!-- Notes Will be Inserted Here-->
+              <tbody class="notesData" cellspacing="0">
+
+              </tbody>
+            </table>
+          </td>
+          <!-- Display Notes End-->
+        </tr>
+      </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
